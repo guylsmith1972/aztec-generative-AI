@@ -1,0 +1,63 @@
+{
+  "name": "Wheelbarrow",
+  "type": "transport",
+  "description": "A wooden machine with a wheel and handles used for transporting goods.",
+  "manufacturer": [
+    "carpenters",
+    "woodworkers"
+  ],
+  "related objects": [
+    {
+      "description": "A wooden handcart for transporting goods.",
+      "name": "Handcart",
+      "type": "transport"
+    },
+    {
+      "description": "A large container used for transporting materials on construction sites.",
+      "name": "Dumpster",
+      "type": "container"
+    },
+    {
+      "description": "A tool with a broad blade and short handle for digging and moving dirt.",
+      "name": "Shovel",
+      "type": "tool"
+    }
+  ],
+  "users": [
+    "farmers",
+    "gardeners",
+    "laborers"
+  ],
+  "components": [
+    {
+      "name": "Wheel",
+      "description": "Circular object that enables the movement of the wheelbarrow.",
+      "dimension_cm": 40,
+      "quantity": 1
+    },
+    {
+      "name": "Handle",
+      "description": "Long wooden structure used for pushing and steering the wheelbarrow.",
+      "dimension_cm": 120,
+      "quantity": 2
+    },
+    {
+      "name": "Tray",
+      "description": "The main body of the wheelbarrow where goods are placed.",
+      "dimension_cm": 100,
+      "quantity": 1
+    },
+    {
+      "name": "Legs",
+      "description": "Supports the tray when the wheelbarrow is not in motion.",
+      "dimension_cm": 20,
+      "quantity": 2
+    },
+    {
+      "name": "Brace",
+      "description": "Metal support connecting the tray and wheel, providing structural integrity.",
+      "dimension_cm": 45,
+      "quantity": 1
+    }
+  ]
+}

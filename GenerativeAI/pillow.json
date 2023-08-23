@@ -1,0 +1,84 @@
+{
+  "components": {
+    "pillowcase": {
+      "materials": [ "cloth", "metallic threads", "beads" ],
+      "craft_difficulty": {
+        "basic": "low",
+        "ornamental": "high"
+      }
+    },
+    "filling": {
+      "straw": {
+        "softness": "low",
+        "comfort": "medium",
+        "craft_difficulty": "low"
+      },
+      "down": {
+        "softness": "high",
+        "comfort": "high",
+        "craft_difficulty": "medium"
+      },
+      "feathers": {
+        "softness": "medium",
+        "comfort": "high",
+        "craft_difficulty": "medium"
+      }
+    }
+  },
+  "pillows": [
+    {
+      "type": "Bolster",
+      "pillowcase": "basic",
+      "filling": {
+        "softness": [ "low", "medium", "high" ],
+        "comfort": [ "medium", "high" ]
+      },
+      "description": "A long cylindrical or rectangular pillow used for support."
+    },
+    {
+      "type": "Sleeping Pillow",
+      "pillowcase": "basic",
+      "filling": {
+        "softness": [ "high" ],
+        "comfort": [ "high" ]
+      },
+      "description": "A standard pillow used for sleeping."
+    },
+    {
+      "type": "Tasseled Pillow",
+      "pillowcase": "ornamental",
+      "filling": {
+        "softness": [ "low", "high" ],
+        "comfort": [ "not_required" ]
+      },
+      "description": "An ornamental pillow decorated with tassels."
+    },
+    {
+      "type": "Ornamental or Embroidered Pillow",
+      "pillowcase": "ornamental",
+      "filling": {
+        "softness": [ "medium", "high" ],
+        "comfort": [ "not_required" ]
+      },
+      "description": "A decorative pillow embroidered with intricate designs."
+    },
+    {
+      "type": "Prayer Pillow",
+      "pillowcase": "basic",
+      "filling": {
+        "softness": [ "low" ],
+        "comfort": [ "medium" ]
+      },
+      "description": "A small cushion used for kneeling during prayer."
+    },
+    {
+      "type": "Seat Cushion",
+      "pillowcase": "basic",
+      "filling": {
+        "softness": [ "low", "medium" ],
+        "comfort": [ "medium", "high" ]
+      },
+      "description": "A cushion used to pad wooden chairs or benches."
+    }
+  ]
+}

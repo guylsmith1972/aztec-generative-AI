@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GenerativeAI", "GenerativeAI\GenerativeAI.pyproj", "{7673390F-76A9-41DC-AB7E-B4DEAA9D6706}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7673390F-76A9-41DC-AB7E-B4DEAA9D6706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7673390F-76A9-41DC-AB7E-B4DEAA9D6706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1518075-ABD6-4A63-9E05-15852367034F}
+	EndGlobalSection
+EndGlobal

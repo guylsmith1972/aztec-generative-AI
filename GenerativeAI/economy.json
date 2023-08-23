@@ -1,0 +1,2162 @@
+{
+  "objects": {
+    "anvil": {
+      "components": [
+        {
+          "description": "The material from which the anvil is made, typically cast iron or steel.",
+          "dimension_cm": 60,
+          "name": "Metal",
+          "quantity": 1
+        },
+        {
+          "description": "A circular structure attached to the top of the anvil for holding hot metal.",
+          "dimension_cm": 25,
+          "name": "Ring",
+          "quantity": 1
+        }
+      ],
+      "description": "A heavy metal block with a flat top used for shaping metal.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Anvil",
+      "related objects": [
+        {
+          "description": "A hammer used for striking the metal on the anvil.",
+          "name": "Hammer",
+          "type": "tool"
+        },
+        {
+          "description": "A tong used for holding and manipulating hot metal.",
+          "name": "Tong",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "blacksmiths",
+        "metalworkers"
+      ]
+    },
+    "axe": {
+      "components": [
+        {
+          "description": "The sharp, cutting edge of the axe.",
+          "dimension_cm": 20,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the axe.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Hole in the handle where the blade is mounted.",
+          "dimension_cm": 5,
+          "name": "Eye",
+          "quantity": 1
+        }
+      ],
+      "description": "A sharp blade mounted on a long handle used for cutting wood and other materials.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Axe",
+      "related objects": [
+        {
+          "description": "A similar tool with a curved blade used for shaving and carving wood.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A heavy mallet used for driving wedges into wood to split it apart.",
+          "name": "Wedge",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "woodcutters",
+        "lumberjacks",
+        "carpenters"
+      ]
+    },
+    "battle axe": {
+      "components": [
+        {
+          "description": "The heavy, blade portion of the axe.",
+          "dimension_cm": 25,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for gripping and swinging the axe.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden pole connecting the handle to the head.",
+          "dimension_cm": 90,
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ],
+      "description": "A heavy, single-handed axe designed for use in combat.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Battle Axe",
+      "related objects": [
+        {
+          "description": "A sword used for close-range combat.",
+          "name": "Longsword",
+          "type": "weapon"
+        },
+        {
+          "description": "A bow and arrow used for ranged combat.",
+          "name": "Bow and Arrow",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "warriors",
+        "knights"
+      ]
+    },
+    "battleaxe": {
+      "components": [
+        {
+          "description": "The blade of the battleaxe, designed for striking blows.",
+          "dimension_cm": 25,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden or metal structure used for holding and swinging the battleaxe.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden pole connecting the handle to the head, providing structural integrity.",
+          "dimension_cm": 90,
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ],
+      "description": "A heavy, single-handed axe designed for combat.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Battleaxe",
+      "related objects": [
+        {
+          "description": "A sword used for close-range combat.",
+          "name": "Longsword",
+          "type": "weapon"
+        },
+        {
+          "description": "A bow and arrow used for ranged combat.",
+          "name": "Bow and Arrow",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "warriors",
+        "knights"
+      ]
+    },
+    "bow and arrows": {
+      "components": [
+        {
+          "description": "Flexible piece of wood or metal with a string and arrow rest.",
+          "dimension_cm": 60,
+          "name": "Bow",
+          "quantity": 1
+        },
+        {
+          "description": "Sharp projectile with a pointed tip and feathers for stability.",
+          "dimension_cm": 75,
+          "name": "Arrow",
+          "quantity": 20
+        },
+        {
+          "description": "Strong cord used to pull the bowstring.",
+          "dimension_cm": 60,
+          "name": "String",
+          "quantity": 1
+        },
+        {
+          "description": "Container for holding arrows.",
+          "dimension_cm": 30,
+          "name": "Quiver",
+          "quantity": 1
+        }
+      ],
+      "description": "A weapon consisting of a flexible piece of wood or metal with a string and arrowheads for shooting projectiles.",
+      "manufacturer": [
+        "bowyer"
+      ],
+      "name": "Bow and Arrows",
+      "related objects": [
+        {
+          "description": "A long-range ranged weapon used for hunting and warfare.",
+          "name": "Crossbow",
+          "type": "weaponry"
+        },
+        {
+          "description": "A short-range melee weapon used for close combat.",
+          "name": "Sword",
+          "type": "weaponry"
+        }
+      ],
+      "type": "weaponry",
+      "users": [
+        "archers",
+        "hunters",
+        "warriors"
+      ]
+    },
+    "breastplate": {
+      "components": [
+        {
+          "description": "Fine metal links woven together to form a flexible mesh.",
+          "dimension_cm": 20,
+          "name": "Chainmail",
+          "quantity": 1
+        },
+        {
+          "description": "Thick metal plates attached to the breastplate for added protection.",
+          "dimension_cm": 5,
+          "name": "Plate armor",
+          "quantity": 3
+        },
+        {
+          "description": "Strong leather strips used to secure the breastplate in place.",
+          "dimension_cm": 40,
+          "name": "Leather straps",
+          "quantity": 6
+        }
+      ],
+      "description": "A piece of armor worn over the chest to protect against injury.",
+      "manufacturer": [
+        "blacksmiths",
+        "armorers"
+      ],
+      "name": "Breastplate",
+      "related objects": [
+        {
+          "description": "A helmet worn on the head to protect against injury.",
+          "name": "Helmet",
+          "type": "headgear"
+        },
+        {
+          "description": "A shield used for defending oneself in battle.",
+          "name": "Shield",
+          "type": "weapon"
+        },
+        {
+          "description": "A sword used for attacking enemies.",
+          "name": "Sword",
+          "type": "weapon"
+        }
+      ],
+      "type": "armor",
+      "users": [
+        "knights",
+        "warriors",
+        "noblemen"
+      ]
+    },
+    "chisel": {
+      "components": [
+        {
+          "description": "The sharp, angled edge of the chisel used for carving and shaping materials.",
+          "dimension_cm": 5,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden or metal structure used for holding and controlling the chisel.",
+          "dimension_cm": 20,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Metal support connecting the blade and handle, providing structural integrity.",
+          "dimension_cm": 3,
+          "name": "Anvil",
+          "quantity": 1
+        }
+      ],
+      "description": "A metal blade with a handle used for carving and shaping wood, stone, or metal.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Chisel",
+      "related objects": [
+        {
+          "description": "A hammer for striking the chisel to shape materials.",
+          "name": "Hammer",
+          "type": "tool"
+        },
+        {
+          "description": "A cutting tool with a thin blade used for making precise cuts in wood or metal.",
+          "name": "Saw",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "stonemasons",
+        "metalworkers"
+      ]
+    },
+    "claw hammer": {
+      "components": [
+        {
+          "description": "The curved claw on one end of the hammer.",
+          "dimension_cm": 15,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden or metal structure used for holding and swinging the hammer.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The flat striking surface on the other end of the hammer.",
+          "dimension_cm": 20,
+          "name": "Flat Surface",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with a curved claw on one end and a flat striking surface on the other.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Claw Hammer",
+      "related objects": [
+        {
+          "description": "A straight-edged chisel used for carving wood or stone.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A heavy mallet used for driving metal punches or setting rivets.",
+          "name": "Machinist Hammer",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "blacksmiths",
+        "stonemasons"
+      ]
+    },
+    "coping saw": {
+      "components": [
+        {
+          "description": "The sharp, toothed edge of the saw.",
+          "dimension_cm": 30,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The metal or wooden structure that holds the blade in place and provides leverage for cutting.",
+          "dimension_cm": 45,
+          "name": "Frame",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden or metal handle used for holding and controlling the saw.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A handheld saw used for cutting intricate shapes and curves in wood.",
+      "manufacturer": [
+        "blacksmiths",
+        "toolmakers"
+      ],
+      "name": "Coping Saw",
+      "related objects": [
+        {
+          "description": "A frame saw used for cutting straight lines in wood.",
+          "name": "Frame Saw",
+          "type": "tool"
+        },
+        {
+          "description": "A chisel used for carving and shaping wood.",
+          "name": "Chisel",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "joiners"
+      ]
+    },
+    "crossbow": {
+      "components": [
+        {
+          "description": "The main body of the crossbow that holds the string and shoots the arrow or bolt.",
+          "dimension_cm": 60,
+          "name": "Bow",
+          "quantity": 1
+        },
+        {
+          "description": "A strong cord used to pull back the bow and shoot the arrow or bolt.",
+          "dimension_cm": 200,
+          "name": "String",
+          "quantity": 1
+        },
+        {
+          "description": "A thin, pointed projectile made of wood or metal used as ammunition for the crossbow.",
+          "dimension_cm": 75,
+          "name": "Arrow",
+          "quantity": 20
+        },
+        {
+          "description": "A heavy, dart-like projectile made of metal used as ammunition for the crossbow.",
+          "dimension_cm": 60,
+          "name": "Bolt",
+          "quantity": 10
+        }
+      ],
+      "description": "A bow-like weapon that shoots arrows or bolts using a mechanism similar to a lever action rifle.",
+      "manufacturer": [
+        "blacksmiths",
+        "weaponsmiths"
+      ],
+      "name": "Crossbow",
+      "related objects": [
+        {
+          "description": "A longbow for shooting arrows from a distance.",
+          "name": "Longbow",
+          "type": "weapon"
+        },
+        {
+          "description": "A short sword used for close combat.",
+          "name": "Machete",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "archers",
+        "military personnel"
+      ]
+    },
+    "cultivator": {
+      "components": [
+        {
+          "description": "Sharp edge used for loosening soil.",
+          "dimension_cm": 25,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and steering the cultivator.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The main body of the cultivator where the blade is attached.",
+          "dimension_cm": 30,
+          "name": "Frame",
+          "quantity": 1
+        }
+      ],
+      "description": "A handheld tool used for loosening soil and removing weeds.",
+      "manufacturer": [
+        "blacksmiths",
+        "farmers"
+      ],
+      "name": "Cultivator",
+      "related objects": [
+        {
+          "description": "A plow for tilling soil.",
+          "name": "Plow",
+          "type": "tool"
+        },
+        {
+          "description": "A rake for gathering and spreading crops.",
+          "name": "Rake",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "farmers",
+        "gardeners"
+      ]
+    },
+    "dagger": {
+      "components": [
+        {
+          "description": "The sharp, pointed end of the dagger.",
+          "dimension_cm": 20,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The handle of the dagger.",
+          "dimension_cm": 15,
+          "name": "Hilt",
+          "quantity": 1
+        },
+        {
+          "description": "A protective piece that covers the hand and prevents injury while holding the dagger.",
+          "dimension_cm": 8,
+          "name": "Guard",
+          "quantity": 1
+        }
+      ],
+      "description": "A small, sharp blade designed for stabbing.",
+      "manufacturer": [
+        "blacksmiths",
+        "weaponsmiths"
+      ],
+      "name": "Dagger",
+      "related objects": [
+        {
+          "description": "A sword used for slashing and thrusting.",
+          "name": "Sword",
+          "type": "weapon"
+        },
+        {
+          "description": "A bow and arrow used for ranged combat.",
+          "name": "Bow and Arrow",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "knights",
+        "warriors",
+        "assassins"
+      ]
+    },
+    "felling axe": {
+      "components": [
+        {
+          "description": "The sharp edge of the axe used for cutting through wood.",
+          "dimension_cm": 25,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the axe.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Hole in the handle where a rope or chain can be attached to secure the axe to a belt or harness.",
+          "dimension_cm": 3,
+          "name": "Eye",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool used for cutting down trees.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Felling Axe",
+      "related objects": [
+        {
+          "description": "An axe used for splitting wood.",
+          "name": "Woodcutting Axe",
+          "type": "tool"
+        },
+        {
+          "description": "A tool with a long handle and curved blade used for chopping wood.",
+          "name": "Machete",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "lumberjacks",
+        "woodcutters"
+      ]
+    },
+    "frame saw": {
+      "components": [
+        {
+          "description": "The sharp, toothed edge of the frame saw.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The two wooden structures that hold the blade in place.",
+          "dimension_cm": 80,
+          "name": "Frame",
+          "quantity": 2
+        },
+        {
+          "description": "Metal fastener used to secure the blade to the frames.",
+          "dimension_cm": 5,
+          "name": "Pin",
+          "quantity": 4
+        }
+      ],
+      "description": "A woodworking tool consisting of a blade mounted between two frames.",
+      "manufacturer": [
+        "blacksmiths",
+        "toolmakers"
+      ],
+      "name": "Frame Saw",
+      "related objects": [
+        {
+          "description": "A hand saw for cutting wood.",
+          "name": "Hand Saw",
+          "type": "tool"
+        },
+        {
+          "description": "A machine used for sawing logs into lumber.",
+          "name": "Sawmill",
+          "type": "machine"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers"
+      ]
+    },
+    "gauntlet": {
+      "components": [
+        {
+          "description": "Thick, flat metal piece that covers the back of the hand and part of the forearm.",
+          "dimension_cm": 20,
+          "name": "Plate",
+          "quantity": 1
+        },
+        {
+          "description": "Covering worn over the fingers to protect them from injury.",
+          "dimension_cm": 15,
+          "name": "Gauntlet",
+          "quantity": 5
+        },
+        {
+          "description": "Metal support connecting the plate and gauntlet, providing structural integrity.",
+          "dimension_cm": 30,
+          "name": "Brace",
+          "quantity": 1
+        }
+      ],
+      "description": "A piece of armor worn on the hand to protect it from injury.",
+      "manufacturer": [
+        "blacksmiths",
+        "armorers"
+      ],
+      "name": "Gauntlet",
+      "related objects": [
+        {
+          "description": "A piece of armor worn on the forearm to protect it from injury.",
+          "name": "Vambrace",
+          "type": "armor"
+        },
+        {
+          "description": "A piece of armor worn on the upper arm to protect it from injury.",
+          "name": "Rerebrace",
+          "type": "armor"
+        }
+      ],
+      "type": "armor",
+      "users": [
+        "knights",
+        "warriors"
+      ]
+    },
+    "grain silo": {
+      "components": [
+        {
+          "description": "The main body of the silo where grain is stored.",
+          "dimension_cm": 200,
+          "name": "Wooden Structure",
+          "quantity": 1
+        },
+        {
+          "description": "Enables access to the grain inside the silo.",
+          "dimension_cm": 50,
+          "name": "Door",
+          "quantity": 1
+        },
+        {
+          "description": "Used for accessing the top of the silo during maintenance and harvesting.",
+          "dimension_cm": 10,
+          "name": "Ladder",
+          "quantity": 1
+        },
+        {
+          "description": "Used for moving grain into and out of the silo.",
+          "dimension_cm": 40,
+          "name": "Grain Shovel",
+          "quantity": 1
+        }
+      ],
+      "description": "A large container used for storing grain.",
+      "manufacturer": [
+        "farmers",
+        "carpenters"
+      ],
+      "name": "Grain Silo",
+      "related objects": [
+        {
+          "description": "A smaller container used for storing seeds and other small grains.",
+          "name": "Seed Bin",
+          "type": "storage"
+        },
+        {
+          "description": "A tool used for harvesting crops.",
+          "name": "Sickle",
+          "type": "tool"
+        }
+      ],
+      "type": "storage",
+      "users": [
+        "farmers",
+        "merchants"
+      ]
+    },
+    "hammer": {
+      "components": [
+        {
+          "description": "The heavy metal object on the end of the hammer used for striking.",
+          "dimension_cm": 10,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden or metal structure used for holding and controlling the hammer.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with a heavy head on a long handle used for striking objects.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Hammer",
+      "related objects": [
+        {
+          "description": "A chisel used for carving and shaping wood or stone.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A saw used for cutting through materials such as wood or metal.",
+          "name": "Saw",
+          "type": "tool"
+        },
+        {
+          "description": "A pliers-like tool with interchangeable heads used for gripping, bending, and twisting objects.",
+          "name": "Vise-Grip",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "blacksmiths",
+        "metalworkers",
+        "stonemasons"
+      ]
+    },
+    "hand saw": {
+      "components": [
+        {
+          "description": "The sharp, toothed edge of the saw.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for gripping and steering the saw.",
+          "dimension_cm": 80,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The metal or wood structure that connects the blade and handle.",
+          "dimension_cm": 30,
+          "name": "Frame",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool used for cutting wood or metal.",
+      "manufacturer": [
+        "blacksmiths",
+        "toolmakers"
+      ],
+      "name": "Hand Saw",
+      "related objects": [
+        {
+          "description": "A large saw used for cutting logs and timber.",
+          "name": "Two-handled saw",
+          "type": "tool"
+        },
+        {
+          "description": "A handheld blade used for shaving and carving wood.",
+          "name": "Chisel",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "metalworkers"
+      ]
+    },
+    "helmet": {
+      "components": [
+        {
+          "description": "The topmost part of the helmet, often decorated with ornaments.",
+          "dimension_cm": 20,
+          "name": "Crown",
+          "quantity": 1
+        },
+        {
+          "description": "A movable flap that covers the eyes and nose.",
+          "dimension_cm": 45,
+          "name": "Visor",
+          "quantity": 1
+        },
+        {
+          "description": "Protective plates covering the cheeks and jaw.",
+          "dimension_cm": 30,
+          "name": "Cheek guards",
+          "quantity": 2
+        },
+        {
+          "description": "A barrier protecting the nasal cavity from blows and projectiles.",
+          "dimension_cm": 20,
+          "name": "Nasal guard",
+          "quantity": 1
+        },
+        {
+          "description": "A leather or fabric strip connecting the helmet to the breastplate for added stability.",
+          "dimension_cm": 60,
+          "name": "Chin strap",
+          "quantity": 1
+        }
+      ],
+      "description": "A protective headgear worn by soldiers and knights to defend against blows and projectiles.",
+      "manufacturer": [
+        "armorers",
+        "blacksmiths"
+      ],
+      "name": "Helmet",
+      "related objects": [
+        {
+          "description": "A shield used to block attacks from enemies.",
+          "name": "Shield",
+          "type": "defensive equipment"
+        },
+        {
+          "description": "A sword used for offense and defense.",
+          "name": "Sword",
+          "type": "weapon"
+        },
+        {
+          "description": "A piece of fabric or leather worn around the neck to protect against blows.",
+          "name": "Neck guard",
+          "type": "protective gear"
+        }
+      ],
+      "type": "protective gear",
+      "users": [
+        "knights",
+        "soldiers"
+      ]
+    },
+    "katana": {
+      "components": [
+        {
+          "description": "The curved, single-edged blade of the katana.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden or bamboo handle of the katana.",
+          "dimension_cm": 25,
+          "name": "Grip",
+          "quantity": 1
+        },
+        {
+          "description": "A sheath for storing and protecting the katana when not in use.",
+          "dimension_cm": 80,
+          "name": "Scabbard",
+          "quantity": 1
+        }
+      ],
+      "description": "A single-edged sword with a curved blade and a long grip.",
+      "manufacturer": [
+        "bladesmiths"
+      ],
+      "name": "Katana",
+      "related objects": [
+        {
+          "description": "A double-edged sword with a straight blade and a round handguard.",
+          "name": "Longsword",
+          "type": "weapon"
+        },
+        {
+          "description": "A short, curved sword used for close combat.",
+          "name": "Dagger",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "samurai",
+        "warriors"
+      ]
+    },
+    "lathe": {
+      "components": [
+        {
+          "description": "Holds the workpiece and rotates it on its axis.",
+          "dimension_cm": 20,
+          "name": "Headstock",
+          "quantity": 1
+        },
+        {
+          "description": "Provides support for the cutting tool and guides it along the workpiece.",
+          "dimension_cm": 30,
+          "name": "Tailstock",
+          "quantity": 1
+        },
+        {
+          "description": "A sharp blade used to cut or shape the workpiece.",
+          "dimension_cm": 5,
+          "name": "Cutting tool",
+          "quantity": 1
+        },
+        {
+          "description": "Holds the workpiece in place during turning operations.",
+          "dimension_cm": 25,
+          "name": "Chuck",
+          "quantity": 1
+        }
+      ],
+      "description": "A machine tool that rotates a workpiece on an axis to perform various operations such as cutting, sanding, drilling, or turning.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Lathe",
+      "related objects": [
+        {
+          "description": "A handheld device used for shaping wood and other materials.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A large, powerful lathe used for shaping metal parts.",
+          "name": "Milling machine",
+          "type": "machine tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "metalworkers"
+      ]
+    },
+    "longsword": {
+      "components": [
+        {
+          "description": "The long, sharp edge of the sword designed for cutting and thrusting.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The handle of the sword providing a grip for the wielder.",
+          "dimension_cm": 25,
+          "name": "Hilt",
+          "quantity": 1
+        },
+        {
+          "description": "The bulbous end of the hilt that provides balance and weight to the sword.",
+          "dimension_cm": 5,
+          "name": "Pommel",
+          "quantity": 1
+        },
+        {
+          "description": "A protective sheath for storing the longsword when not in use.",
+          "dimension_cm": 80,
+          "name": "Scabbard",
+          "quantity": 1
+        }
+      ],
+      "description": "A type of sword with a longer blade designed for one-handed use.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Longsword",
+      "related objects": [
+        {
+          "description": "A shorter sword designed for two-handed use.",
+          "name": "Battleaxe",
+          "type": "weapon"
+        },
+        {
+          "description": "A smaller, lighter sword used for fencing and dueling.",
+          "name": "Rapier",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "knights",
+        "warriors"
+      ]
+    },
+    "loom": {
+      "components": [
+        {
+          "description": "The main structure of the loom where the warp threads are attached.",
+          "dimension_cm": 120,
+          "name": "Frame",
+          "quantity": 1
+        },
+        {
+          "description": "A device used for holding the weft thread as it is passed through the warp threads.",
+          "dimension_cm": 30,
+          "name": "Heddle",
+          "quantity": 4
+        },
+        {
+          "description": "A tool used for passing the weft thread through the shed of the loom.",
+          "dimension_cm": 25,
+          "name": "Shuttle",
+          "quantity": 1
+        },
+        {
+          "description": "A frame used for holding the warp threads of a loom.",
+          "dimension_cm": 60,
+          "name": "Warp beam",
+          "quantity": 1
+        }
+      ],
+      "description": "A device used for weaving fabric.",
+      "manufacturer": [
+        "weavers"
+      ],
+      "name": "Loom",
+      "related objects": [
+        {
+          "description": "A machine used for spinning thread or yarn from fibers.",
+          "name": "Spinning wheel",
+          "type": "tool"
+        },
+        {
+          "description": "A frame used for holding the warp threads of a loom.",
+          "name": "Warp beam",
+          "type": "frame"
+        }
+      ],
+      "type": "textile production",
+      "users": [
+        "weavers",
+        "textile merchants"
+      ]
+    },
+    "machete": {
+      "components": [
+        {
+          "description": "The curved edge of the machete made of high-carbon steel.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden or metal structure used for gripping and swinging the machete.",
+          "dimension_cm": 90,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "A protective cover for the blade made of leather or wood.",
+          "dimension_cm": 80,
+          "name": "Sheath",
+          "quantity": 1
+        }
+      ],
+      "description": "A long blade with a curved edge used for cutting through dense vegetation and hacking through wood.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Machete",
+      "related objects": [
+        {
+          "description": "A short sword used for close combat.",
+          "name": "Katana",
+          "type": "weapon"
+        },
+        {
+          "description": "A large axe used for chopping down trees.",
+          "name": "Felling axe",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "lumberjacks",
+        "farmers",
+        "explorers"
+      ]
+    },
+    "machinist hammer": {
+      "components": [
+        {
+          "description": "The flat, striking surface of the hammer.",
+          "dimension_cm": 10,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden or iron structure used for holding and controlling the hammer.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The long metal rod connecting the head and handle.",
+          "dimension_cm": 45,
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ],
+      "description": "A heavy metal tool with a long handle and flat striking surface used for shaping metal.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Machinist Hammer",
+      "related objects": [
+        {
+          "description": "A smaller hammer with a curved striking surface used for shaping metal.",
+          "name": "Rounding Hammer",
+          "type": "tool"
+        },
+        {
+          "description": "A chisel-like tool used for cutting and carving metal.",
+          "name": "Cutting Tool",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "machinists",
+        "blacksmiths"
+      ]
+    },
+    "neck guard": {
+      "components": [
+        {
+          "description": "Thick, flat piece of metal that forms the main body of the neck guard.",
+          "dimension_cm": 30,
+          "name": "Plate",
+          "quantity": 1
+        },
+        {
+          "description": "Circular structure connecting the plate and the helmet.",
+          "dimension_cm": 25,
+          "name": "Band",
+          "quantity": 1
+        },
+        {
+          "description": "Fine mesh of interlocking rings providing additional protection.",
+          "dimension_cm": 10,
+          "name": "Chainmail",
+          "quantity": 1
+        }
+      ],
+      "description": "A piece of armor designed to protect the neck and throat.",
+      "manufacturer": [
+        "armorers"
+      ],
+      "name": "Neck Guard",
+      "related objects": [
+        {
+          "description": "A helmet for protecting the head.",
+          "name": "Helmet",
+          "type": "protective gear"
+        },
+        {
+          "description": "A breastplate for protecting the chest.",
+          "name": "Breastplate",
+          "type": "protective gear"
+        },
+        {
+          "description": "A pair of gauntlets for protecting the hands.",
+          "name": "Gauntlet",
+          "type": "protective gear"
+        }
+      ],
+      "type": "protective gear",
+      "users": [
+        "knights",
+        "men-at-arms",
+        "crossbowmen"
+      ]
+    },
+    "pickaxe": {
+      "components": [
+        {
+          "description": "The broad, flat edge of the pickaxe used for breaking rock and earth.",
+          "dimension_cm": 30,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the pickaxe.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The metal connection between the blade and handle, providing structural integrity.",
+          "dimension_cm": 25,
+          "name": "Head",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with a broad blade and long handle for breaking rock and earth.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Pickaxe",
+      "related objects": [
+        {
+          "description": "A similar tool used for digging and moving dirt.",
+          "name": "Shovel",
+          "type": "tool"
+        },
+        {
+          "description": "A tool with a pointed tip and curved blade for cutting wood.",
+          "name": "Axe",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "miners",
+        "quarrymen",
+        "stonecutters"
+      ]
+    },
+    "pitchfork": {
+      "components": [
+        {
+          "description": "Long wooden structure used for holding and maneuvering the pitchfork.",
+          "dimension_cm": 120,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Sharp metal prongs used for lifting and moving materials.",
+          "dimension_cm": 60,
+          "name": "Tines",
+          "quantity": 4
+        },
+        {
+          "description": "Metal support connecting the handle and tines, providing structural integrity.",
+          "dimension_cm": 35,
+          "name": "Brace",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with a long handle and tines used for lifting and moving materials.",
+      "manufacturer": [
+        "blacksmiths",
+        "farmers"
+      ],
+      "name": "Pitchfork",
+      "related objects": [
+        {
+          "description": "A similar tool with a flat blade instead of tines, used for digging and breaking up soil.",
+          "name": "Shovel",
+          "type": "tool"
+        },
+        {
+          "description": "A large container used for storing and transporting grain.",
+          "name": "Grain silo",
+          "type": "container"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "farmers",
+        "laborers"
+      ]
+    },
+    "plow": {
+      "components": [
+        {
+          "description": "The sharp edge of the plow that cuts into the soil.",
+          "dimension_cm": 45,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The long wooden handle used for pushing and steering the plow.",
+          "dimension_cm": 200,
+          "name": "Shaft",
+          "quantity": 1
+        },
+        {
+          "description": "A secondary blade attached to the bottom of the plow that breaks up clods of soil.",
+          "dimension_cm": 30,
+          "name": "Coulter",
+          "quantity": 1
+        },
+        {
+          "description": "The curved edge of the plow that creates a furrow for planting seeds.",
+          "dimension_cm": 50,
+          "name": "Moldboard",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool used for tilling soil to prepare it for planting.",
+      "manufacturer": [
+        "blacksmiths",
+        "farmers"
+      ],
+      "name": "Plow",
+      "related objects": [
+        {
+          "description": "A tool used for digging and loosening soil.",
+          "name": "Fork",
+          "type": "tool"
+        },
+        {
+          "description": "A tool with a curved blade used for cutting through roots and rocks in the soil.",
+          "name": "Cultivator",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "farmers",
+        "gardeners"
+      ]
+    },
+    "rake": {
+      "components": [
+        {
+          "description": "Long, thin strips of metal or wood that form the rake's teeth.",
+          "dimension_cm": 20,
+          "name": "Teeth",
+          "quantity": 15
+        },
+        {
+          "description": "The main body of the rake where the teeth are attached.",
+          "dimension_cm": 40,
+          "name": "Head",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and maneuvering the rake.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with long teeth used for gathering and moving leaves, grass, or other loose material.",
+      "manufacturer": [
+        "blacksmiths",
+        "farmers"
+      ],
+      "name": "Rake",
+      "related objects": [
+        {
+          "description": "A tool with a flat blade used for smoothing surfaces.",
+          "name": "Smoothing tool",
+          "type": "tool"
+        },
+        {
+          "description": "A tool with a curved blade used for cutting roots and weeds.",
+          "name": "Cultivator",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "gardeners",
+        "farmers"
+      ]
+    },
+    "rapier": {
+      "components": [
+        {
+          "description": "The long, thin blade of the rapier.",
+          "dimension_cm": 90,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The handle and guard of the rapier.",
+          "dimension_cm": 25,
+          "name": "Hilt",
+          "quantity": 1
+        },
+        {
+          "description": "A sheath for storing the rapier when not in use.",
+          "dimension_cm": 80,
+          "name": "Scabbard",
+          "quantity": 1
+        }
+      ],
+      "description": "A sword with a long blade and hilt designed for thrusting attacks.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Rapier",
+      "related objects": [
+        {
+          "description": "A short sword with a broad blade used for hacking and slashing.",
+          "name": "Battle axe",
+          "type": "weapon"
+        },
+        {
+          "description": "A bow and arrow used for ranged combat.",
+          "name": "Longbow",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "knights",
+        "noblemen",
+        "soldiers"
+      ]
+    },
+    "roving hook": {
+      "components": [
+        {
+          "description": "Long wooden structure used for grasping and maneuvering the roving hook.",
+          "dimension_cm": 120,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Curved metal tip used for gathering wool fibers.",
+          "dimension_cm": 30,
+          "name": "Tip",
+          "quantity": 1
+        },
+        {
+          "description": "Metal rod connecting the handle and tip, providing structural integrity.",
+          "dimension_cm": 60,
+          "name": "Shaft",
+          "quantity": 1
+        }
+      ],
+      "description": "A long-handled tool with a curved tip used for gathering wool fibers during the process of spinning.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Roving Hook",
+      "related objects": [
+        {
+          "description": "A spindle used for spinning yarn or thread from raw fiber.",
+          "name": "Spindle",
+          "type": "tool"
+        },
+        {
+          "description": "A device used for holding and stretching spun yarn to create fabric.",
+          "name": "Loom",
+          "type": "machine"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "spinners",
+        "weavers"
+      ]
+    },
+    "saw": {
+      "components": [
+        {
+          "description": "The sharp edge of the saw used for cutting through wood.",
+          "dimension_cm": 40,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the saw.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "Metal support connecting the blade and handle, providing structural integrity.",
+          "dimension_cm": 30,
+          "name": "Frame",
+          "quantity": 1
+        }
+      ],
+      "description": "A handheld tool used for cutting through wood.",
+      "manufacturer": [
+        "blacksmiths",
+        "toolmakers"
+      ],
+      "name": "Saw",
+      "related objects": [
+        {
+          "description": "A large saw used for cutting through logs and timber.",
+          "name": "Frame saw",
+          "type": "tool"
+        },
+        {
+          "description": "A small, handheld saw used for trimming and shaping wood.",
+          "name": "Coping saw",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "builders"
+      ]
+    },
+    "sawmill": {
+      "components": [
+        {
+          "description": "Long, thin blade with teeth used for cutting wood.",
+          "dimension_cm": 150,
+          "name": "Saw",
+          "quantity": 1
+        },
+        {
+          "description": "Structure that supports the saw and guides it through the wood.",
+          "dimension_cm": 200,
+          "name": "Frame",
+          "quantity": 1
+        },
+        {
+          "description": "Water-powered mechanism used to drive the saw.",
+          "dimension_cm": 3,
+          "name": "Waterwheel",
+          "quantity": 1
+        },
+        {
+          "description": "Container used for holding water and transporting it to the waterwheel.",
+          "dimension_cm": 50,
+          "name": "Bucket",
+          "quantity": 1
+        }
+      ],
+      "description": "A facility for cutting wood into lumber using a saw.",
+      "manufacturer": [
+        "carpenters",
+        "woodworkers"
+      ],
+      "name": "Sawmill",
+      "related objects": [
+        {
+          "description": "A water-powered mill used for grinding grain and other materials.",
+          "name": "Watermill",
+          "type": "manufacturing"
+        },
+        {
+          "description": "A machine used for shaping metal or wood through the use of a rotating blade.",
+          "name": "Lathe",
+          "type": "tool"
+        }
+      ],
+      "type": "manufacturing",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "builders"
+      ]
+    },
+    "shield": {
+      "components": [
+        {
+          "description": "The central part of the shield made from wood.",
+          "dimension_cm": 50,
+          "name": "Wooden core",
+          "quantity": 1
+        },
+        {
+          "description": "A metal projection on the center of the shield used for deflecting blows.",
+          "dimension_cm": 20,
+          "name": "Metal boss",
+          "quantity": 1
+        },
+        {
+          "description": "A covering made from leather to protect the hand holding the shield.",
+          "dimension_cm": 40,
+          "name": "Leather cover",
+          "quantity": 1
+        }
+      ],
+      "description": "A protective device carried by warriors to deflect blows from weapons.",
+      "manufacturer": [
+        "armorers"
+      ],
+      "name": "Shield",
+      "related objects": [
+        {
+          "description": "A sword for attacking enemies.",
+          "name": "Sword",
+          "type": "weapon"
+        },
+        {
+          "description": "A helmet for protecting the head.",
+          "name": "Helmet",
+          "type": "headgear"
+        },
+        {
+          "description": "A breastplate for protecting the chest.",
+          "name": "Breastplate",
+          "type": "bodygear"
+        }
+      ],
+      "type": "defense",
+      "users": [
+        "knights",
+        "warriors",
+        "soldiers"
+      ]
+    },
+    "shovel": {
+      "components": [
+        {
+          "description": "The broad, flat surface used for digging and scooping dirt.",
+          "dimension_cm": 30,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for gripping and steering the shovel.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A tool with a broad blade and short handle for digging and moving dirt.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Shovel",
+      "related objects": [
+        {
+          "description": "A pickaxe for breaking rocks and other hard materials.",
+          "name": "Pickaxe",
+          "type": "tool"
+        },
+        {
+          "description": "A rake for smoothing out soil and removing debris.",
+          "name": "Rake",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "farmers",
+        "gardeners",
+        "laborers"
+      ]
+    },
+    "skein": {
+      "components": [
+        {
+          "description": "Long, thin strand of fibers or threads spun together.",
+          "dimension_cm": 100,
+          "name": "Yarn",
+          "quantity": 50
+        },
+        {
+          "description": "Wooden sticks used for winding the yarn into a skein.",
+          "dimension_cm": 20,
+          "name": "Pegs",
+          "quantity": 4
+        }
+      ],
+      "description": "A long, loose bundle of yarn or thread.",
+      "manufacturer": [
+        "spinners",
+        "weavers"
+      ],
+      "name": "Skein",
+      "related objects": [
+        {
+          "description": "A ball of yarn used for knitting or crocheting.",
+          "name": "Ball of Yarn",
+          "type": "textile"
+        },
+        {
+          "description": "A tool used for winding yarn into a skein.",
+          "name": "Windlass",
+          "type": "tool"
+        }
+      ],
+      "type": "textile",
+      "users": [
+        "knitters",
+        "crocheters",
+        "weavers"
+      ]
+    },
+    "smoothing tool": {
+      "components": [
+        {
+          "description": "The sharp edge of the tool used for smoothing surfaces.",
+          "dimension_cm": 10,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the tool.",
+          "dimension_cm": 30,
+          "name": "Handle",
+          "quantity": 1
+        },
+        {
+          "description": "The main body of the tool where the blade is attached.",
+          "dimension_cm": 25,
+          "name": "Metal body",
+          "quantity": 1
+        }
+      ],
+      "description": "A handheld device used for smoothing surfaces such as wood or metal.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Smoothing Tool",
+      "related objects": [
+        {
+          "description": "A chisel used for carving and shaping wood.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A hammer used for striking tools to shape metal.",
+          "name": "Hammer",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "woodworkers",
+        "blacksmiths",
+        "metalworkers"
+      ]
+    },
+    "spindle": {
+      "components": [
+        {
+          "description": "The long, thin rod that spins the fibers.",
+          "dimension_cm": 50,
+          "name": "Shaft",
+          "quantity": 1
+        },
+        {
+          "description": "A disk or cylinder with a groove around its circumference where the yarn is wound.",
+          "dimension_cm": 10,
+          "name": "Whorl",
+          "quantity": 1
+        },
+        {
+          "description": "Small wooden sticks used to hold the yarn in place on the whorl.",
+          "dimension_cm": 2,
+          "name": "Bobbins",
+          "quantity": 4
+        }
+      ],
+      "description": "A device used for spinning fibers into yarn or thread.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Spindle",
+      "related objects": [
+        {
+          "description": "A wooden spoon used for stirring and mixing liquids.",
+          "name": "Spoon",
+          "type": "tool"
+        },
+        {
+          "description": "A frame with a series of pegs used for drying clothes.",
+          "name": "Clothesline",
+          "type": "utility"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "spinners",
+        "weavers"
+      ]
+    },
+    "spinning wheel": {
+      "components": [
+        {
+          "description": "Circular object that enables the spinning of the thread or yarn.",
+          "dimension_cm": 25,
+          "name": "Wheel",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure with a spike at one end used for holding and spinning the fibers.",
+          "dimension_cm": 70,
+          "name": "Spindle",
+          "quantity": 1
+        },
+        {
+          "description": "Small cylindrical objects used for winding spun threads onto.",
+          "dimension_cm": 3,
+          "name": "Bobbins",
+          "quantity": 10
+        },
+        {
+          "description": "A wooden frame that supports the wheel and spindle, providing stability and tension control.",
+          "dimension_cm": 50,
+          "name": "Spinning Frame",
+          "quantity": 1
+        }
+      ],
+      "description": "A device used for spinning thread or yarn from fibers.",
+      "manufacturer": [
+        "blacksmiths",
+        "carpenters"
+      ],
+      "name": "Spinning Wheel",
+      "related objects": [
+        {
+          "description": "A tool used for weaving fabric from spun threads.",
+          "name": "Loom",
+          "type": "tool"
+        },
+        {
+          "description": "A container used for storing and transporting spun thread or yarn.",
+          "name": "Skein",
+          "type": "container"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "spinners",
+        "weavers"
+      ]
+    },
+    "sword": {
+      "components": [
+        {
+          "description": "The sharp, cutting edge of the sword.",
+          "dimension_cm": 60,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "The handle of the sword, providing a grip for the wielder.",
+          "dimension_cm": 25,
+          "name": "Hilt",
+          "quantity": 1
+        },
+        {
+          "description": "The cap at the end of the hilt, often decorated with ornate designs.",
+          "dimension_cm": 5,
+          "name": "Pommel",
+          "quantity": 1
+        },
+        {
+          "description": "A protective piece that covers the hand and part of the blade.",
+          "dimension_cm": 30,
+          "name": "Guard",
+          "quantity": 1
+        }
+      ],
+      "description": "A blade weapon designed for cutting and thrusting.",
+      "manufacturer": [
+        "blacksmiths",
+        "weaponsmiths"
+      ],
+      "name": "Sword",
+      "related objects": [
+        {
+          "description": "A long, curved blade used for slashing and chopping.",
+          "name": "Battle axe",
+          "type": "weapon"
+        },
+        {
+          "description": "A short, sturdy blade used for close-quarters combat.",
+          "name": "Dagger",
+          "type": "weapon"
+        },
+        {
+          "description": "A bow and arrow set used for ranged combat.",
+          "name": "Bow and arrows",
+          "type": "weapon"
+        }
+      ],
+      "type": "weapon",
+      "users": [
+        "knights",
+        "warriors",
+        "soldiers"
+      ]
+    },
+    "tong": {
+      "components": [
+        {
+          "description": "Curved metal structures that grip objects.",
+          "dimension_cm": 30,
+          "name": "Prongs",
+          "quantity": 2
+        },
+        {
+          "description": "Long wooden structure used for holding and controlling the tong.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A metal tool with two curved prongs used for gripping and lifting objects.",
+      "manufacturer": [
+        "blacksmiths"
+      ],
+      "name": "Tong",
+      "related objects": [
+        {
+          "description": "A hammer with a flat head on one end and a claw on the other.",
+          "name": "Claw Hammer",
+          "type": "tool"
+        },
+        {
+          "description": "A long-handled tool with a pointed tip used for digging and breaking up soil.",
+          "name": "Pitchfork",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "farmers",
+        "laborers"
+      ]
+    },
+    "vambrace": {
+      "components": [
+        {
+          "description": "Metal support connecting the vambrace and armor, providing structural integrity.",
+          "dimension_cm": 20,
+          "name": "Brace",
+          "quantity": 1
+        },
+        {
+          "description": "Thick metal sheet covering the upper part of the arm.",
+          "dimension_cm": 45,
+          "name": "Plate",
+          "quantity": 1
+        },
+        {
+          "description": "Leather strap used for fastening the vambrace to the arm.",
+          "dimension_cm": 60,
+          "name": "Strap",
+          "quantity": 2
+        }
+      ],
+      "description": "A piece of armor that covers the upper part of the arm.",
+      "manufacturer": [
+        "blacksmiths",
+        "armorers"
+      ],
+      "name": "Vambrace",
+      "related objects": [
+        {
+          "description": "A piece of armor that covers the torso and back.",
+          "name": "Breastplate",
+          "type": "armor"
+        },
+        {
+          "description": "A piece of armor that covers the lower part of the leg.",
+          "name": "Greave",
+          "type": "armor"
+        },
+        {
+          "description": "A long-handled axe used for combat.",
+          "name": "Poleaxe",
+          "type": "weapon"
+        }
+      ],
+      "type": "armor",
+      "users": [
+        "knights",
+        "men-at-arms",
+        "foot soldiers"
+      ]
+    },
+    "warp beam": {
+      "components": [
+        {
+          "description": "The primary material used in constructing the warp beam.",
+          "dimension_cm": 100,
+          "name": "Wood",
+          "quantity": 2
+        },
+        {
+          "description": "Used to secure the warp threads to the beam.",
+          "dimension_cm": 5,
+          "name": "Metal nails",
+          "quantity": 50
+        },
+        {
+          "description": "The yarn or thread that is woven into fabric on the loom.",
+          "dimension_cm": 100,
+          "name": "Warp thread",
+          "quantity": 1
+        }
+      ],
+      "description": "A wooden beam used for weaving fabric on a loom.",
+      "manufacturer": [
+        "carpenters",
+        "woodworkers"
+      ],
+      "name": "Warp Beam",
+      "related objects": [
+        {
+          "description": "A device used to spin thread or yarn from fibers.",
+          "name": "Spinning wheel",
+          "type": "tool"
+        },
+        {
+          "description": "A machine that combines multiple threads into a single, stronger strand.",
+          "name": "Roving hook",
+          "type": "tool"
+        },
+        {
+          "description": "A frame for holding the warp threads in place during weaving.",
+          "name": "Loom",
+          "type": "textile production"
+        }
+      ],
+      "type": "textile production",
+      "users": [
+        "weavers",
+        "spinners",
+        "textile workers"
+      ]
+    },
+    "watermill": {
+      "components": [
+        {
+          "description": "Circular structure that captures the energy of flowing water to power the millstone.",
+          "dimension_cm": 2,
+          "name": "Waterwheel",
+          "quantity": 1
+        },
+        {
+          "description": "Heavy stone used for grinding grain into flour.",
+          "dimension_cm": 60,
+          "name": "Millstone",
+          "quantity": 1
+        },
+        {
+          "description": "Transmits the rotational motion of the waterwheel to the millstone.",
+          "dimension_cm": 30,
+          "name": "Gear mechanism",
+          "quantity": 1
+        },
+        {
+          "description": "Container used for holding and feeding grain into the millstone.",
+          "dimension_cm": 50,
+          "name": "Hopper",
+          "quantity": 1
+        }
+      ],
+      "description": "A machine powered by water that grinds grain into flour.",
+      "manufacturer": [
+        "millers"
+      ],
+      "name": "Watermill",
+      "related objects": [
+        {
+          "description": "A windmill used for milling grain and other materials.",
+          "name": "Windmill",
+          "type": "milling"
+        },
+        {
+          "description": "A hand-powered device used for grinding grain into flour.",
+          "name": "Mortar and pestle",
+          "type": "tool"
+        }
+      ],
+      "type": "milling",
+      "users": [
+        "farmers",
+        "bakers"
+      ]
+    },
+    "wedge": {
+      "components": [
+        {
+          "description": "The triangular blade of the wedge, made from metal or stone.",
+          "dimension_cm": 20,
+          "name": "Blade",
+          "quantity": 1
+        },
+        {
+          "description": "Long wooden structure used for holding and striking the wedge.",
+          "dimension_cm": 60,
+          "name": "Handle",
+          "quantity": 1
+        }
+      ],
+      "description": "A triangular blade used for splitting wood or stone.",
+      "manufacturer": [
+        "blacksmiths",
+        "metalworkers"
+      ],
+      "name": "Wedge",
+      "related objects": [
+        {
+          "description": "A chisel used for carving and shaping wood or metal.",
+          "name": "Chisel",
+          "type": "tool"
+        },
+        {
+          "description": "A hammer used for striking tools such as chisels and wedges.",
+          "name": "Hammer",
+          "type": "tool"
+        }
+      ],
+      "type": "tool",
+      "users": [
+        "carpenters",
+        "stonemasons"
+      ]
+    }
+  }
+}
