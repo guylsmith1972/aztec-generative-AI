@@ -21,4 +21,5 @@ def validate(schema_name, object_to_validate):
         return True
     except jsonschema.exceptions.ValidationError as e:
         print(f"Validation error: {e.message}")
+        print(json.dumps(object_to_validate, indent=4))
         return False

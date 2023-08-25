@@ -1,63 +1,41 @@
 {
-  "name": "Wheelbarrow",
-  "type": "transport",
-  "description": "A wooden machine with a wheel and handles used for transporting goods.",
+  "assembly": {
+    "pieces needed": {
+      "blade": "a sharpened piece of material (usually metal) designed for cutting or piercing",
+      "hilt": "the protective guard at the base of a blade",
+      "handle": "the part by which a tool or weapon is held and manipulated",
+      "pommel": "the weighted knob at the end of the handle of a weapon or tool"
+    },
+    "tools needed": {
+      "glue": "a natural adhesive used in various crafts and constructions",
+      "clamp": "a mechanical device with opposing jaws used to hold objects securely together",
+      "peening hammer": "a specialized hammer with a ball or rounded end opposite the flat face"
+    }
+  },
+  "description": "a small, sharp blade used for precise cuts and carving",
   "manufacturer": [
-    "carpenters",
-    "woodworkers"
+    "blacksmiths",
+    "cutlers"
   ],
-  "related objects": [
-    {
-      "description": "A wooden handcart for transporting goods.",
-      "name": "Handcart",
-      "type": "transport"
-    },
-    {
-      "description": "A large container used for transporting materials on construction sites.",
-      "name": "Dumpster",
-      "type": "container"
-    },
-    {
-      "description": "A tool with a broad blade and short handle for digging and moving dirt.",
-      "name": "Shovel",
-      "type": "tool"
-    }
-  ],
+  "name": "knife",
+  "related objects": {
+    "scissors": "a tool with two blades that move against each other to cut through material",
+    "sword": "a long, sharp blade mounted on a hilt and used as a weapon"
+  },
+  "type": "tool",
   "users": [
-    "farmers",
-    "gardeners",
-    "laborers"
+    "carpenters",
+    "woodworkers",
+    "artisans",
+    "surgeons"
   ],
-  "components": [
-    {
-      "name": "Wheel",
-      "description": "Circular object that enables the movement of the wheelbarrow.",
-      "dimension_cm": 40,
-      "quantity": 1
-    },
-    {
-      "name": "Handle",
-      "description": "Long wooden structure used for pushing and steering the wheelbarrow.",
-      "dimension_cm": 120,
-      "quantity": 2
-    },
-    {
-      "name": "Tray",
-      "description": "The main body of the wheelbarrow where goods are placed.",
-      "dimension_cm": 100,
-      "quantity": 1
-    },
-    {
-      "name": "Legs",
-      "description": "Supports the tray when the wheelbarrow is not in motion.",
-      "dimension_cm": 20,
-      "quantity": 2
-    },
-    {
-      "name": "Brace",
-      "description": "Metal support connecting the tray and wheel, providing structural integrity.",
-      "dimension_cm": 45,
-      "quantity": 1
-    }
-  ]
+  "variants": {
+    "hunting knife": "designed for hunting and skinning game",
+    "paring knife": "a small knife used for peeling and intricate work",
+    "bread knife": "serrated blade knife for slicing bread",
+    "utility knife": "versatile knife for light to medium tasks",
+    "boning knife": "thin, flexible blade for removing bones",
+    "cleaver": "heavy blade for chopping meat and bone"
+  }
 }
+

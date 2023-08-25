@@ -22,12 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="craftable_object.py" />
     <Compile Include="economy.py" />
     <Compile Include="huggingface_api.py" />
     <Compile Include="main.py" />
     <Compile Include="oobabooga_api.py" />
     <Compile Include="openai_api.py" />
-    <Compile Include="query_templates.py" />
+    <Compile Include="prompt_templates.py" />
     <Compile Include="researcher.py" />
     <Compile Include="run_locally.py" />
     <Compile Include="schema.py" />
@@ -49,9 +50,14 @@
     <Content Include="economy_old.json" />
     <Content Include="example_object.json" />
     <Content Include="pillow.json" />
+    <Content Include="prompt_templates\generate_bill_of_materials.txt" />
+    <Content Include="prompt_templates\generate_craftable_object.txt" />
+    <Content Include="prompt_templates\generate_object_parts.txt" />
+    <Content Include="prompt_templates\generate_tools_needed.txt" />
     <Content Include="schemata\object_definition.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="prompt_templates\" />
     <Folder Include="schemata\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

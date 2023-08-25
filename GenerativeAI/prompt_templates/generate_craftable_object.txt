@@ -1,0 +1,37 @@
+REQUEST: Create a JSON object that describes a/an axe (a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials) as it existed in 15th-century Europe.
+It should contain information about who would use the axe, the general type (category) of the item, who would make it,
+other items that are related to it, and variants (objects that are similar in kind but with different specialization).
+
+***RESPONSE-INDICATOR***
+
+{
+      "description": "a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials",
+      "manufacturer": [
+        "blacksmiths",
+        "cutlers"
+      ],
+      "name": "axe",
+      "related objects": {
+        "maul": "a heavy mallet with a flat head used for striking blows"
+      },
+      "type": "tool",
+      "users": [
+        "woodworkers",
+        "carpenters",
+        "loggers",
+        "military personnel"
+      ],
+      "variants": {
+        "axe with adze": "has a flat, curved blade on one end for shaping wood or stone",
+        "axe with saw": "has a serrated blade on one end for sawing through branches and limbs",
+        "camping axe": "lightweight and portable for use on camping trips",
+        "felling axe": "designed for cutting through wood at the base of a tree",
+        "fireman's axe": "designed for breaking down doors and walls in emergency situations"
+      }
+}
+
+
+REQUEST: Create a JSON object that describes a/an ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***) as it existed in 15th-century Europe.
+It should contain information about who would use the **OBJECT-NAME***, the general type (category) of the item, who would make it,
+other items that are related to it, and variants (objects that are similar in kind but with different specialization).
+

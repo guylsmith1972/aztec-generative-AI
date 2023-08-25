@@ -5,12 +5,12 @@ import researcher
 
 
 required_objects = {
-    "anvil": None,
     "axe": None,
     "chisel": None,
     "helmet": None,
     "loom": None,
     "pickaxe": None,
+    "anvil": None,
     "sword": None
 }
 
@@ -37,7 +37,7 @@ def main():
 
     # print(pruned)
 
-    for i in range(1, 250):
+    for i in range(1, 100):
         discover_objects(economy, i)
 
 

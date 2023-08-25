@@ -1,0 +1,31 @@
+REQUEST: Create a JSON object that describes the materials needed to craft an anvil in 15th-century Europe.
+
+***RESPONSE-INDICATOR***
+
+{
+    {
+      "name": "Wrought Iron Ingots",
+      "quantity": "4-6 pieces"
+    },
+    {
+      "name": "Charcoal",
+      "quantity": "8-10 bushels"
+    },
+    {
+      "name": "Limestone",
+      "quantity": "5-8 pounds"
+    },
+    {
+      "name": "Clay",
+      "quantity": "3-5 pounds"
+    },
+    {
+      "name": "Water",
+      "quantity": "10-15 gallons"
+    }
+  ]
+}
+
+
+REQUEST: Create a JSON object that describes the materials needed to craft a ***OBJECT-NAME*** in 15th-century Europe.
+

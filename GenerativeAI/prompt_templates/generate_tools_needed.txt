@@ -1,0 +1,16 @@
+REQUEST: Create a JSON object that contains tools needed to assemble a axe (a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials) from premade parts.
+Only consider tools that were available in 15th-century Europe.
+
+***RESPONSE-INDICATOR***
+
+Tools that are needed to assemble an axe are:
+
+{
+    "rasp": "for shaping or smoothing the handle, especially if it doesn't fit the axe head's eye",
+    "file": "to sharpen the axe blade if necessary and to remove any burrs or imperfections.",
+    "hammer": "to drive the wedges into the handle",
+    "vise": "for holding the axe steady when working on it, but not strictly necessary"
+}
+
+REQUEST: Create a JSON object that contains tools needed to assemble a ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***) from premade parts.
+Only consider tools that were available in 15th-century Europe.

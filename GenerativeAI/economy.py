@@ -1,12 +1,12 @@
 import copy
+import craftable_object
 import json
 import random
-import schema
 
 
 class Economy:
     def __init__(self, filename):
-        self.economy = {'objects': {}}
+        self.economy = {'objects': {}, 'banned': []}
         self.filename = filename
         self.load()
 
@@ -23,26 +23,37 @@ class Economy:
             json.dump(self.economy, file, ensure_ascii=False, indent=2, sort_keys=True)
 
     def add_object(self, obj):
-        if schema.validate('object_definition', obj):
-            self.economy['objects'][obj['name'].lower()] = obj
+        if craftable_object.validate(obj):
+            self.economy['objects'][obj['name']] = obj
             return True
         return False
 
     def get_object(self, name):
-        key = name.lower()
+        key = name
         return self.economy['objects'][key] if 'objects' in self.economy and key in self.economy['objects'] else None
-            
+    
+    def ban_object_name(self, name):
+        if name in self.economy['banned']:
+            return
+        self.economy['banned'].append(name)
+     
+    def is_banned(self, name):
+        return name in self.economy['banned']
+    
     def get_undefined_objects(self, required_objects):
         object_names_found = set()
         accessories_found = copy.copy(required_objects)
 
         for object_name, object_details in self.economy['objects'].items():
-            object_names_found.add(object_name.lower())
-            for accessory in object_details['related objects']:
-                accessory_name = accessory['name'].lower()
-                # if '(' not in object_name and ')' not in object_name:
-                #     accessories_found[f'{accessory_name} ({object_name})'] = accessory['description'].lower()
-                accessories_found[accessory_name] = None
+            object_names_found.add(object_name)
+            for accessory_name, accessory_details in craftable_object.extract_object_references(object_details).items():
+                if self.is_banned(accessory_name):
+                    continue
+                parts = accessory_name.split('(')
+                if len(parts) > 2:
+                    continue
+                
+                accessories_found[accessory_name] = accessory_details
 
         pending = {}
         for name, description in accessories_found.items():

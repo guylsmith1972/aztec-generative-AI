@@ -1,0 +1,49 @@
+{
+  "knife": {
+  "crafting": {
+    "blade": {
+      "description": "The sharp edge of the knife that is used for cutting.",
+      "name": "Blade",
+      "type": "permanent"
+    },
+    "handle": {
+      "description": "The grip or handle of the knife, which allows a person to hold and control it.",
+      "name": "Handle",
+      "type": "permanent"
+    },
+    "hilt": {
+      "description": "The guard that surrounds the blade and protects the hand from injury.",
+      "name": "Hilt",
+      "type": "permanent"
+    },
+    "pommel": {
+      "description": "The rounded end of the handle where the blade meets the hilt.",
+      "name": "Pommel",
+      "type": "permanent"
+    }
+  },
+  "description": "A small, sharp blade used for precise cuts and carving.",
+  "manufacturer": [
+    "blacksmiths",
+    "cutlers"
+  ],
+  "name": "Knife",
+  "related objects": {
+    "Scissors": {
+      "description": "A tool with two blades that move against each other to cut through material.",
+      "type": "tool"
+    },
+    "Sword": {
+      "description": "A long, sharp blade mounted on a hilt and used as a weapon.",
+      "type": "weapon"
+    }
+  },
+  "type": "tool",
+  "users": [
+    "carpenters",
+    "woodworkers",
+    "artisans",
+    "surgeons"
+  ]
+}
+}

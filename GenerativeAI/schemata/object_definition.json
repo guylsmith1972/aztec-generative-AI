@@ -2,9 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "type": {
-      "type": "string"
-    },
     "description": {
       "type": "string"
     },
@@ -18,22 +15,13 @@
       "type": "string"
     },
     "related objects": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "description": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          }
-        },
-        "required": [ "description", "name", "type" ]
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
       }
+    },
+    "type": {
+      "type": "string"
     },
     "users": {
       "type": "array",
@@ -41,27 +29,43 @@
         "type": "string"
       }
     },
-    "components": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "dimension_cm": {
-            "type": "integer"
-          },
-          "quantity": {
-            "type": "integer"
+    "variants": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "assembly": {
+      "type": "object",
+      "properties": {
+        "pieces needed": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [ "component", "location", "feature", "material" ]
+              },
+              "description": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "string"
+              }
+            },
+            "required": [ "type", "description" ]
           }
         },
-        "required": [ "name", "description", "dimension_cm", "quantity" ]
-      }
+        "tools needed": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [ "pieces needed", "tools needed" ]
     }
   },
-  "required": [ "type", "description", "manufacturer", "name", "related objects", "users", "components" ]
+  "required": [ "description", "manufacturer", "name", "related objects", "type", "users", "variants", "assembly" ]
 }

@@ -1,0 +1,57 @@
+{
+    "loom": {
+      "crafting": {
+        "frame": {
+          "description": "The wooden frame or structure of the loom upon which the warp threads are attached.",
+          "name": "Frame",
+          "type": "permanent"
+        },
+        "heddles": {
+          "description": "The heddles are a series of loops or eyes in the warp threads through which the weft thread is passed.",
+          "name": "Heddles",
+          "type": "permanent"
+        },
+        "shuttle": {
+          "description": "A small, rectangular device used for passing the weft thread through the fabric.",
+          "name": "Shuttle",
+          "type": "tool"
+        },
+        "warp_beam": {
+          "description": "A long, narrow beam that holds the lengthwise warp threads in place on the loom.",
+          "name": "Warp Beam",
+          "type": "permanent"
+        },
+        "weft_bobbin": {
+          "description": "A small, cylindrical bobbin that holds the weft thread as it is woven through the fabric.",
+          "name": "Weft Bobbin",
+          "type": "tool"
+        }
+      },
+      "description": "A machine used for weaving fabric or thread.",
+      "manufacturer": [
+        "weavers",
+        "craftsmen"
+      ],
+      "name": "Loom",
+      "related objects": {
+        "Spinning wheel": {
+          "description": "A device used for spinning yarn or thread from fibers.",
+          "type": "tool"
+        },
+        "Warping mill": {
+          "description": "A machine used for preparing the warp threads of a loom.",
+          "type": "machine"
+        },
+        "Weft": {
+          "description": "The weft is the horizontal thread that is woven through the lengthwise warp threads of a fabric.",
+          "type": "thread"
+        }
+      },
+      "type": "textile_manufacturing",
+      "users": [
+        "weavers",
+        "spinners",
+        "craftsmen"
+      ]
+    }
+}
