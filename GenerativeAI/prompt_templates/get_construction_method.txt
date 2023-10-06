@@ -1,0 +1,14 @@
+QUESTION: In medieval Europe, was a/an axe (a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials) most commonly made by assembling it from parts that were crafted from other materials, or was it crafted directly from a single raw material?
+
+***RESPONSE-INDICATOR***
+
+Assembled. In the medieval an axe was made from multiple parts: an iron or steel axe head and a wooden handle.
+
+QUESTION: In medieval Europe, was a/an anvil (a heavy block of iron or steel with a flat top used for shaping metal) most commonly made by assembling it from parts that were crafted from other materials, or was it crafted directly from a single raw material?
+
+***RESPONSE-INDICATOR***
+
+Direct. In medieval Europe an anvil was made from just one piece: a single block of wrought iron.
+
+QUESTION: In medieval Europe, was a/an ***OBJECT-NAME*** (***OBJECT-DEFINITIION***) most commonly made by assembling it from parts that were crafted from other materials, or was it crafted directly from a single raw material?
+

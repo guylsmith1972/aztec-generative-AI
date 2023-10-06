@@ -1,5 +1,4 @@
-REQUEST: Create a JSON object that describes the materials, components, locations, and features of an anvil (a heavy metal block with a flat top used for shaping metal).
-Materials are raw materials that are shaped into a component. If a component is listed, do not list the materials for that component.
+REQUEST: Create a JSON object that describes the components, locations, and features of an anvil (a heavy metal block with a flat top used for shaping metal) in medieval Europe.
 Components are pieces that are crafted and assembled into the anvil.
 Locations are named places on the anvil.
 Features are shaped parts of an existing part of the anvil.
@@ -15,20 +14,7 @@ Features are shaped parts of an existing part of the anvil.
     "pritchel hole": {"type": "feature", "description": "a round hole in the face of the anvil used for securing chisels and other tools", "quantity": "0-1"}
 }
 
-REQUEST: Create a JSON object that describes the materials, components, locations, and features of an anvil body (The cast or forged metal body of the anvil).
-Materials are raw materials that are shaped into a component. If a component is listed, do not list the materials for that component.
-Components are pieces that are crafted and assembled into the anvil body.
-Locations are named places on the anvil body.
-Features are shaped parts of an existing part of the anvil body.
-
-***RESPONSE-INDICATOR***
-
-{
-    "wrought iron ingots": {"type": "material", "description": "solid blocks of metal, primarily composed of iron with minimal carbon content, known for their malleability, ductility, and resistance to corrosion", "qauntity": "50-250 pounds"},
-}
-
-REQUEST: Create a JSON object that describes the materials, components, locations, and features of a ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***).
-Materials are raw materials that are shaped into a component. If a component is listed, do not list the materials for that component.
+REQUEST: Create a JSON object that describes the components, locations, and features of a ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***) in medieval Europe.
 Components are pieces that are crafted and assembled into the ***OBJECT-NAME***.
 Locations are named places on the ***OBJECT-NAME***.
 Features are shaped parts of an existing part of the ***OBJECT-NAME***.

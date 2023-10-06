@@ -1,0 +1,13 @@
+REQUEST: In medieval Europe, a/an handle was a part of a/an axe. What raw material was used to make the handle?
+
+***RESPONSE-INDICATOR***
+
+{
+    "wood": {
+        "type": "material",
+        "description": "wood",
+        "qauntity": "2-3 feet long, 3-4 inches wide"
+    },
+}
+
+REQUEST: In medieval Europe, a/an ***PART-NAME*** was a part of a/an ***PARENT-OBJECT***. What raw material was used to make the ***PART-NAME***?

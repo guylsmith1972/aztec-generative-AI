@@ -1,0 +1,13 @@
+REQUEST: Create a JSON object that describes the raw material needed to craft a/an anvil body (The cast or forged metal body of the anvil).
+
+***RESPONSE-INDICATOR***
+
+{
+    "wrought iron ingots": {
+        "type": "material",
+        "description": "solid blocks of metal, primarily composed of iron with minimal carbon content, known for their malleability, ductility, and resistance to corrosion",
+        "qauntity": "50-250 pounds"
+    },
+}
+
+REQUEST: Create a JSON object that describes the raw material need to craft a/an ***OBJECT-NAME*** (***OBJECT-DEFINITIION***).

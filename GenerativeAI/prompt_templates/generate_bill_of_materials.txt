@@ -1,4 +1,4 @@
-REQUEST: Create a JSON object that describes the materials needed to craft an anvil in 15th-century Europe.
+REQUEST: Create a JSON object that describes the materials needed to craft an anvil in medieval Europe.
 
 ***RESPONSE-INDICATOR***
 
@@ -27,5 +27,5 @@ REQUEST: Create a JSON object that describes the materials needed to craft an an
 }
 
 
-REQUEST: Create a JSON object that describes the materials needed to craft a ***OBJECT-NAME*** in 15th-century Europe.
+REQUEST: Create a JSON object that describes the materials needed to craft a ***OBJECT-NAME*** in medieval Europe.
 

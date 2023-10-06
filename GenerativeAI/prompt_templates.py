@@ -17,13 +17,14 @@ def get(template_name, replacements):
     return body
 
 
-def execute(ai_provider, template_name, replacements):
+def execute_raw(ai_provider, template_name, replacements):
     prompt = get(template_name, replacements)
     result = ai_provider.query(prompt, display_progress=False)
 
-    if result is None:
-        return None
+    return result
 
-    return utility.extract_json(result.lower())
-    
-    
+
+def execute(ai_provider, template_name, replacements):
+    result = execute_raw(ai_provider, template_name, replacements)
+    return None if result is None else utility.extract_json(result.lower())
+

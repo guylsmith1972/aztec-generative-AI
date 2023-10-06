@@ -5,6 +5,10 @@
     "description": {
       "type": "string"
     },
+    "construction method": {
+      "type": "string",
+      "enum": [ "assembled", "direct" ]
+    },
     "manufacturer": {
       "type": "array",
       "items": {

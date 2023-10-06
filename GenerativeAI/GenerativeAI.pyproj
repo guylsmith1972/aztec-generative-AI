@@ -49,11 +49,13 @@
     <Content Include="economy.json" />
     <Content Include="economy_old.json" />
     <Content Include="example_object.json" />
-    <Content Include="pillow.json" />
+    <Content Include="prompt_templates\confirm_construction_of_a.txt" />
     <Content Include="prompt_templates\generate_bill_of_materials.txt" />
     <Content Include="prompt_templates\generate_craftable_object.txt" />
+    <Content Include="prompt_templates\generate_object_materials.txt" />
     <Content Include="prompt_templates\generate_object_parts.txt" />
     <Content Include="prompt_templates\generate_tools_needed.txt" />
+    <Content Include="prompt_templates\get_construction_method.txt" />
     <Content Include="schemata\object_definition.json" />
   </ItemGroup>
   <ItemGroup>

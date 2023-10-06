@@ -1,6 +1,7 @@
 import json
 from unittest import result
 import prompt_templates
+import re
 import schema
 import utility
 
@@ -13,7 +14,7 @@ def extract_object_references(obj):
     # "pieces needed"
     pieces = obj.get("assembly", {}).get("pieces needed", {})
     print(pieces)
-    result.update({f'{k.strip()} ({obj["name"].strip()})': v["description"] for k, v in pieces.items() if v["type"] == "component"})
+    result.update({f'{k.strip()} of a {obj["name"].strip()}': v["description"] for k, v in pieces.items() if v["type"] == "component"})
     
     # "related objects"
     related_objects = obj.get("related objects", {})
@@ -96,7 +97,7 @@ def are_objects_pieces(ai_provider, pieces, object_name):
 def is_object_acceptable(ai_provider, object_name, object_description):
     def query(name, description):
         corrected_name, expanded_description = correct_name_and_description(name, description)
-        return f'REQUEST: Is a/an {corrected_name}{expanded_description} something that existed in 15th-century Europe? Answer with "Yes." or "No." and no other text.'
+        return f'REQUEST: Is a/an {corrected_name}{expanded_description} something that existed in medieval Europe? Answer with "Yes." or "No." and no other text.'
 
     prompt = f'{query("vacuum cleaner", "a device that uses suction to remove dirt and debris from floors, upholstery, and other surfaces")}\n'\
         f'{ai_provider.get_response_prompt()}\n' \
@@ -114,59 +115,65 @@ def is_object_acceptable(ai_provider, object_name, object_description):
     raise RuntimeWarning(f'Bad response to query: {result}')
 
 
+def verify_name(object_json, expected_name):
+    if object_json['name'] != expected_name:
+        parts = expected_name.split(' of a ')
+        if len(parts) > 1:
+            swapped_name = parts[1].strip() + ' ' + parts[0].strip()
+            if object_json['name'] == swapped_name:
+                return True
+        print(f'Received unexpected name {object_json["name"]} when asking for a {expected_name}')
+        return False
+    return True
+
+
 def get_validated_object(ai_provider, object_json, expected_name):
     if not validate(object_json):
         return None
     
-    if object_json['name'] != expected_name:
-        print(f'Received unexpected name {object_json["name"]} when asking for a {expected_name}')
+    if not verify_name(object_json, expected_name):
         return None
-
-    related_removals = []    
-    for related_name, related_description in object_json['related objects'].items():
-        if not is_object_acceptable(ai_provider, related_name, related_description):
-            print(f'Rejecting related object "{related_name}"')
-            related_removals.append(related_name)
-
-    for name in related_removals:
-        print(f'Deleting "{name}"')
-        del object_json['related objects'][name]
-        
-    refined_pieces = object_json['assembly']['pieces needed']
-    
-    are_objects_pieces(ai_provider, refined_pieces, expected_name)
-    
-    piece_removals = []
-    for piece_name, piece_description in refined_pieces.items():
-        if not is_object_a_piece(ai_provider, piece_name, piece_description, object_json['name']):
-            print(f'rejecting piece "{piece_name}"')
-            piece_removals.append(piece_name)
-
-    for name in piece_removals:
-        print(f'deleting "{name}"')
-        del refined_pieces[name]
-        
-    object_json['assembly']['pieces needed'] = refined_pieces
 
     return object_json
 
 
+def get_answer_from_map(ai_provider, template_name, replacements, allowed_answers):
+    response = prompt_templates.execute_raw(ai_provider, template_name, replacements)
+    first_word = re.split('[\s,.]', response.lower().strip())[0]
+    if first_word not in allowed_answers:
+        raise RuntimeWarning(f'{first_word} does not start with an allowed answer -- {response}')
+    return allowed_answers[first_word]
+    
+
 def get_object_request_query(ai_provider, object_name, object_description, example_object):
+    name_parts = object_name.split(' of a ')
     replacements = {
         "***RESPONSE-INDICATOR***": ai_provider.get_response_prompt(),
         "***OBJECT-NAME***": object_name,
-        "***OBJECT-DESCRIPTION***": object_description
+        "***OBJECT-DESCRIPTION***": object_description,
+        "***PART-NAME***": name_parts[0],
+        "***PARENT-NAME***": name_parts[1] if len(name_parts) > 1 else None
         }
     
     result = prompt_templates.execute(ai_provider, 'generate_craftable_object', replacements)
     if result is None:
         return None
     
-    pieces = prompt_templates.execute(ai_provider, 'generate_object_parts', replacements)
+    if len(name_parts) > 1:
+        construction_method = 'direct'
+        pieces = prompt_templates.execute(ai_provider, 'confirm_construction_of_a', replacements)
+    else:
+        construction_method = get_answer_from_map(ai_provider, 'get_construction_method', replacements, {'assembled': 'assembled', 'direct': 'direct'})
+    
+        if construction_method == 'assembled':
+            pieces = prompt_templates.execute(ai_provider, 'generate_object_parts', replacements)
+        elif construction_method == 'direct':
+            pieces = prompt_templates.execute(ai_provider, 'generate_object_materials', replacements)
+
     if pieces is None:
         return None    
     
-    # result['assembly'] = {"pieces needed": {name: k['description'] for name, k in pieces.items() if k['type'] == 'component'}}
+    result['construction method'] = construction_method
     result['assembly'] = {"pieces needed": pieces}
 
     tools = prompt_templates.execute(ai_provider, 'generate_tools_needed', replacements)
@@ -175,5 +182,4 @@ def get_object_request_query(ai_provider, object_name, object_description, examp
     
     result['assembly']['tools needed'] = tools
 
-    # return get_validated_object(ai_provider, result, object_name)
-    return result
+    return get_validated_object(ai_provider, result, object_name)

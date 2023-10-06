@@ -49,7 +49,7 @@ class Economy:
             for accessory_name, accessory_details in craftable_object.extract_object_references(object_details).items():
                 if self.is_banned(accessory_name):
                     continue
-                parts = accessory_name.split('(')
+                parts = accessory_name.split(' of a ')
                 if len(parts) > 2:
                     continue
                 

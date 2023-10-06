@@ -1,4 +1,4 @@
-REQUEST: Create a JSON object that describes a/an axe (a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials) as it existed in 15th-century Europe.
+REQUEST: Create a JSON object that describes a/an axe (a tool with a blade on one end and a handle on the other, used for chopping wood or cutting through materials) as it existed in medieval Europe.
 It should contain information about who would use the axe, the general type (category) of the item, who would make it,
 other items that are related to it, and variants (objects that are similar in kind but with different specialization).
 
@@ -31,7 +31,6 @@ other items that are related to it, and variants (objects that are similar in ki
 }
 
 
-REQUEST: Create a JSON object that describes a/an ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***) as it existed in 15th-century Europe.
+REQUEST: Create a JSON object that describes a/an ***OBJECT-NAME*** (***OBJECT-DESCRIPTION***) as it existed in medieval Europe.
 It should contain information about who would use the **OBJECT-NAME***, the general type (category) of the item, who would make it,
 other items that are related to it, and variants (objects that are similar in kind but with different specialization).
-
